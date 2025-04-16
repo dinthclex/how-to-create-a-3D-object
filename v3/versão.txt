@@ -1,0 +1,30 @@
+v3
+lógica:
+
+desenho:
+-player dinâmico
+-player estático
+-eixos z e x estático
+-eixos z e x dinâmico
+-cubo (no espaço de mundo, preto; e no espaço da câmera, vermelho)
+-projeção do cubo na screen (vista de perpectiva 3d)
+-projeção do cubo na screen (vista de top-down no eixo y)
+
+v2
+implementação:
+-fps
+-status para ver o valor das variáveis em tempo real
+
+desenho:
+-representação da câmera (como linhas, wireframe)
+
+
+
+v1
+lógica:
+-movimentação do player
+
+
+desenho:
+-posição do player
+-direção do player

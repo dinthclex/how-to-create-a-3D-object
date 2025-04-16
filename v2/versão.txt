@@ -1,0 +1,18 @@
+v2
+implementação:
+-fps
+-status para ver o valor das variáveis em tempo real
+
+desenho:
+-representação da câmera (como linhas, wireframe)
+
+
+
+v1
+lógica:
+-movimentação do player
+
+
+desenho:
+-posição do player
+-direção do player

@@ -1,0 +1,8 @@
+v1
+lógica:
+-movimentação do player
+
+
+desenho:
+-posição do player
+-direção do player
