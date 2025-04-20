@@ -1,0 +1,106 @@
+1) Representação paramétrica das Retas:
+Reta 1: 
+  x = x1 + t*(x2 - x1)
+  y = y1 + t*(y2 - y1)
+
+Reta 2:
+  x = x3 + u*(x4 - x3)
+  y = y3 + u*(y4 - y3)
+
+Onde: 
+  (x1,y1) e (x2,y2) são pontos conhecidas na Reta 1.
+  (x3,y3) e (x4,y4) são pontos conhecidos na Reta 2.
+  t e u são parâmetros que variam ao longo das retas.
+
+2) Igualando as Equações:
+Para encontrar a interseção, precisamos encontrar os valores de t e u onde as coordenadas 
+x e y das duas retas são iguais. Isso nos dá o seguinte sistema de equações lineares:
+  x1 + t*(x2 - x1) = x3 + u*(x4 - x3)
+  y1 + t*(y2 - y1) = y3 + u*(y4 - y3)
+
+3) Reorganizando o Sistema:
+Podemos reorganizar o sistema para isolar t e u em um dos lados das equações:
+  (x2 - x1)*t - (x4 - x3)*u = x3 - x1
+  (y2 - y1)*t - (y4 - y3)*u = y3 - y1
+4) Notação Matricial (Onde os Determinantes Entram):
+Podemos escrever esse sistema de equações na forma matricial:
+  |(x2 - x1) -(x4 - x3) | | t | = | (x3 - x1) |
+  |(y2 - y1) -(y4 - y3) | | u | = | (y3 - y1) |
+Se chamarmos a matriz 2x2 de A, o vetor coluna de variáveis de X e o vetor coluna de 
+resultados de B, temos:
+  A * X = B
+5) Resolvendo com a Regra de Cramer (Determinantes):
+A solução para esse sistema de equações lineares pode ser encontrada usando a Regra de 
+Cramer, que envolve o uso de determinantes. A Regra de Cramer diz que: 
+  t = det(At) / det(A)
+  y = det(Au) / det(A)
+Onde:
+  det(A) é o determinante da matriz A.
+  det(At) é o determinante da matriz formada substituindo a primeira coluna de A 
+          (a coluna associada a t) pelo vetor B.
+  det(Au) é o determinantes da matriz formada substituindo a segunda coluna de A 
+          (a coluna associada a u) pelo vetor B.
+
+6) Cálculo dos Determinantes:
+
+-------------------------------------------------------------------------------------
+Eliminação Sistemática
+sistema de duas equações lineares com duas incógnitas:
+
+ax + by = e
+cx + dy = f
+
+onde a, b, c, d, e e f são constantes conhecidas, e x e y são as variáveis que queremos encontrar.
+
+1) eliminação de 'y' (para resolver 'x'):
+
+I)  dax + dby = de   (*d)
+II) bcx + dby = bf   (*b)
+
+subtrair a segunda equação da primeira:
+
+   adx -bcx = de - bf
+(ad - bc)*x = ed - bf
+
+resolvendo para 'x':
+x = (ed - bf)/(ad - bc)
+
+2) eliminação de 'x' (para resolver 'y')
+
+I)  acx + bcy = ec   (*c)
+II) acx + ady = af   (*a)
+
+subtraindo a primeira da segunda:
+
+   ady - bcy = af - ec
+ (ad - bc)*y = af - ec
+
+resolvendo para 'y':
+
+y = (af - ec)/(ad - bc)
+
+|a b| * |x| = |e|
+|c d|   |y|   |f|
+-------------------------------------------------------------------------------------
+Ajeitar as equações de um jeito que nos permita observar alguma relação entre elas de 
+modo mais visível.
+
+Ajeitar as equações de um jeito que a relação entre elas apareça.
+
+Ajeitar a equação é (significa) manipular as variáveis para que a equação fique de 
+um jeito específico. Assim, consegue-se observar algo que não era perceptível antes 
+dessa manipulação de variáveis, achar relações, obter simplificações para que se 
+chegue a conclusões que antes não poderiam se chegar sem essas alterações na equação.
+-------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
